@@ -15,15 +15,19 @@ const QuoteForm = () => {
 
   return (
     <div>
-      <div>
-        <label>Material Cost (€):</label>
+      <div className='iron-voice'>
+      <label>Fance (m²):</label>
         <input type="number" value={materialCost} onChange={(e) => setMaterialCost(Number(e.target.value))} />
       </div>
-      <div>
+      <div className='iron-voice'>
+        <label>Gate(m²):</label>
+        <input type="number" value={materialCost} onChange={(e) => setMaterialCost(Number(e.target.value))} />
+      </div>
+      <div className='iron-voice'>
         <label>Labor Cost (€):</label>
         <input type="number" value={laborCost} onChange={(e) => setLaborCost(Number(e.target.value))} />
       </div>
-      <div>
+      <div className='iron-voice'>
         <label>Other Costs (€):</label>
         <input type="number" value={otherCost} onChange={(e) => setOtherCost(Number(e.target.value))} />
       </div>
